@@ -1,0 +1,14 @@
+<ul id="menu">
+    <li>Home</li>
+    <li>About</li>
+    <li>Services</li>
+    <li>Contact</li>
+</ul>
+
+<script>
+    document.getElementById("menu").addEventListener("click", function(event) {
+        if (event.target.tagName === "LI") {  // Ensures only <li> triggers event
+            console.log("Clicked on:", event.target.innerText);
+        }
+    });
+</script>
